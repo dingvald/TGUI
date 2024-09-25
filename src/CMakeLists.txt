@@ -142,6 +142,128 @@ set(TGUI_SRC
     Widgets/VerticalLayout.cpp
 )
 
+set(TGUI_INCLUDE
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Animation.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Base64.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Color.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Components.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Container.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Cursor.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/CustomWidgetForBindings.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/FileDialogIconLoader.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Filesystem.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Font.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Global.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Layout.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/ObjectConverter.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Sprite.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Signal.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/String.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/SignalManager.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/SubwidgetContainer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/SvgImage.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/TextStyle.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Text.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Texture.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/TextureManager.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Timer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/ToolTip.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Transform.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/TwoFingerScrollDetect.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widget.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/WindowsIMM.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Backend/Font/BackendFont.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Backend/Renderer/BackendRenderTarget.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Backend/Renderer/BackendText.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Backend/Renderer/BackendTexture.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Backend/Window/Backend.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Backend/Window/BackendGui.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Loading/DataIO.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Loading/Deserializer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Loading/ImageLoader.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Loading/Serializer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Loading/Theme.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Loading/ThemeLoader.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Loading/WidgetFactory.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/BoxLayoutRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/ButtonRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/ChatBoxRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/ChildWindowRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/ColorPickerRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/ComboBoxRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/EditBoxRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/FileDialogRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/GroupRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/KnobRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/LabelRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/ListBoxRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/ListViewRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/MenuBarRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/MessageBoxRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/PanelRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/PanelListBoxRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/PictureRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/ProgressBarRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/RadioButtonRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/RangeSliderRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/ScrollablePanelRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/ScrollbarRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/SeparatorLineRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/SliderRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/SpinButtonRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/SplitContainerRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/TabsRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/TextAreaRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/TreeViewRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Renderers/WidgetRenderer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/BitmapButton.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/BoxLayout.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/BoxLayoutRatios.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/Button.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/ButtonBase.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/CanvasBase.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/ChatBox.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/CheckBox.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/ChildWindow.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/ClickableWidget.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/ColorPicker.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/ComboBox.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/EditBox.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/EditBoxSlider.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/FileDialog.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/Group.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/Grid.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/HorizontalLayout.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/HorizontalWrap.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/Knob.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/Label.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/ListBox.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/ListView.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/MenuBar.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/MessageBox.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/Panel.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/PanelListBox.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/Picture.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/ProgressBar.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/RadioButton.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/RadioButtonGroup.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/RangeSlider.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/RichTextLabel.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/ScrollablePanel.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/Scrollbar.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/SeparatorLine.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/Slider.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/SpinButton.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/SpinControl.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/SplitContainer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/Tabs.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/TabContainer.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/TextArea.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/ToggleButton.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/TreeView.hpp
+    ${PROJECT_SOURCE_DIR}/include/TGUI/Widgets/VerticalLayout.hpp
+)
+
 if(TGUI_OS_WINDOWS)
     list(APPEND TGUI_SRC FileDialogIconLoaderWindows.cpp)
 elseif(TGUI_OS_LINUX)
@@ -204,7 +326,7 @@ endif()
 
 # Determine library suffixes depending on static/shared configuration
 if(TGUI_SHARED_LIBS)
-    add_library(tgui SHARED)
+    add_library(tgui SHARED ${TGUI_INCLUDE})
     set_target_properties(tgui PROPERTIES DEFINE_SYMBOL TGUI_EXPORTS)
     set_target_properties(tgui PROPERTIES DEBUG_POSTFIX -d)
 
@@ -223,7 +345,7 @@ if(TGUI_SHARED_LIBS)
     endif()
 
 else()
-    add_library(tgui STATIC)
+    add_library(tgui STATIC ${TGUI_INCLUDE})
     set_target_properties(tgui PROPERTIES DEBUG_POSTFIX -s-d)
     set_target_properties(tgui PROPERTIES RELEASE_POSTFIX -s)
     set_target_properties(tgui PROPERTIES MINSIZEREL_POSTFIX -s)
